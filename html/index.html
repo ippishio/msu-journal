@@ -1,0 +1,286 @@
+{{define "index"}}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Remote style sheet -->
+   
+    
+    <!-- Local style sheet relative to workspace folder -->
+   
+    
+    <!-- Embedded style sheet -->
+    <link  href="../styles/style.css" >
+    <title>Golang</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    
+      a{
+    text-decoration: none !important;
+    color: white;
+    
+}
+.nav-link{
+  margin: 0 15px 0 15px
+}
+.d{
+  width: 100%;
+  background-color: blueviolet;
+  margin: 0 0 0 0;
+}
+.nav-link{
+  color:white;
+  font-weight: 600;
+}
+.main-wrap{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  
+}
+.first{
+  width: 200px;
+  height: 700px;
+  background-color: black;
+}
+.second{
+  
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  padding-top: 30px;
+}
+.std{
+  background-color: white;
+  
+  border-radius: 13px;
+  padding: 20px;
+  text-align: justify;
+}
+main{
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+.center{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.first{
+  width: 200px;
+  height: 2800px;
+  background-color: yellow;
+  /* text-align: center; */
+  /* overflow-y: scroll; */
+}
+.el{
+  margin: 15px 10px 15px 10px;
+  font-size: 18px;
+
+}
+.fir{
+  margin-top: 100px;
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+    
+    <!-- TODO HIDDEN LOGIN -->
+<div class="d">
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 ">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img src=""></svg>
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5">
+          <li><a href="#" class="nav-link  ">Главная</a></li>
+          <li><a href="#" class="nav-link  ">О нас</a></li>
+          <li><a href="#" class="nav-link  ">Цены</a></li>
+          <li><a href="#" class="nav-link ">FAQs</a></li>
+          <li><a href="#" class="nav-link ">About</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <button type="button" id="but" class="btn btn-primary me-2"><a href="/Log">Войти</a></button>
+       
+
+          <button type="button" class="btn btn-primary"><a href="/Sign">Регистрация</a></button>
+        </div>
+      </header>
+    </div>
+  </div>
+  <main>
+    <div>
+      <img width="100%"  src="https://sport-marafon.ru/upload/blog/img/16/1660-010.jpg" alt="">
+    </div>
+
+  <div class="main-wrap">
+    <div class="d-flex flex-nowrap cl">
+     
+    
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 220px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">Категории</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+              Кроссовки
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+              Сапоги
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+              Пальто
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+              Туфли
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              Шапки
+            </a>
+          </li>
+        </ul>
+        <hr>
+       
+      </div>
+     
+    <div class="wrapper">
+
+      <div><h1 class="center">Наши товары</h1></div>
+    <div class="second">
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+      <div class="std">
+        <img width="290" height="200" src="https://cdn5.vedomosti.ru/image/2020/8e/1cw2w2/original-1rd2.jpgg">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sint quod ad atque corporis tenetur? Quaerat, nulla harum? Cumque eaque perspiciatis, ad et reiciendis amet magnam cum incidunt quod voluptate?</p>
+      <button class="btn btn-primary">Купить</button>
+      </div>
+    
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+
+
+</main>
+</body>
+
+</html>
+{{end}}
