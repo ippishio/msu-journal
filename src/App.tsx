@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import Head from './components/head'
 import './App.css';
 import Text from './components/body_t';
 
 import Sw from './components/swiper';
+import Swipq from './components/sq';
+import Petr from './components/P';
 function App() {
   return (
     <div>
       <Head/>
       <Text/>
       <Sw/>
+     <Petr/>
     </div>
    
   )
