@@ -5,9 +5,11 @@ const Text = (props:any)=>{
         <div className="t-flex">
 
             <div className="t-div">
-                <h2>
+              <div className="t-h">  <h2>
                     Текст Таины
                 </h2>
+                </div>
+                <div className="t-p">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam,
                 eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -23,6 +25,7 @@ laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
 autem vel eum iure reprehenderit qui in ea voluptate velit esse
 quam nihil molestiae consequatur, vel illum qui dolorem eum
 fugiat quo voluptas nulla pariatur?</p>
+</div>
             </div>
 
 
@@ -31,3 +34,4 @@ fugiat quo voluptas nulla pariatur?</p>
         </div>
     )
 }
+export default Text;
